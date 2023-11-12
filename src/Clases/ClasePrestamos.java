@@ -44,7 +44,7 @@ public class ClasePrestamos {
         ClasePrestamos.nombreCliente = nombreCliente;
     }
 
-    public static int getTipoPrestamo() {
+    public int getTipoPrestamo() {
         return tipoPrestamo;
     }
 

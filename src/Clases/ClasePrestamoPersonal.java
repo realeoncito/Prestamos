@@ -53,6 +53,12 @@ public class ClasePrestamoPersonal extends ClasePrestamos {
         this.sueldo = sueldo;
     }
 
-    
+    public String toString(){
+        return ("Nombre del Cliente: " + getNombreCliente() + ""
+                + "\nTipo de Prestamo: Personal "
+                + "\nAval 1: " + getAval1() +""
+                + "\nAval 2: " + getAval2() + ""
+                + "\nSueldo: "+ getSueldo());
+    }
     
 }

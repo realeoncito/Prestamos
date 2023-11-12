@@ -4,11 +4,13 @@
  */
 package Clases;
 
+import static Clases.ClasePrestamos.getNombreCliente;
+
 /**
  *
  * @author josue
  */
-public class ClasePrestamoHipotecario {
+public class ClasePrestamoHipotecario extends ClasePrestamos{
 
     //Atributos        
     private static String numCatastral;
@@ -29,29 +31,35 @@ public class ClasePrestamoHipotecario {
     }
  
     //Propiedades
-    public static String getNumCatastral() {
+    public String getNumCatastral() {
         return numCatastral;
     }
 
-    public static void setNumCatastral(String numCatastral) {
+    public void setNumCatastral(String numCatastral) {
         ClasePrestamoHipotecario.numCatastral = numCatastral;
     }
 
-    public static String getUbicacion() {
+    public String getUbicacion() {
         return ubicacion;
     }
 
-    public static void setUbicacion(String ubicacion) {
+    public void setUbicacion(String ubicacion) {
         ClasePrestamoHipotecario.ubicacion = ubicacion;
     }
 
-    public static double getValor() {
+    public double getValor() {
         return valor;
     }
 
-    public static void setValor(double valor) {
+    public void setValor(double valor) {
         ClasePrestamoHipotecario.valor = valor;
     }
 
-    
+    public String toString(){
+        return ("Nombre del Cliente: " + getNombreCliente() + ""
+                + "\nTipo de Prestamo: Hipotecario "
+                + "\nNumero Catastral: " + getNumCatastral() +""
+                + "\nUbicacion: " + getUbicacion() + ""
+                + "\nValor: "+ getValor());
+    }
 }
